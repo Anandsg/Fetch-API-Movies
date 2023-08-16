@@ -4,7 +4,7 @@ import MoviesList from './components/MoviesList';
 import './App.css';
 
 function App() {
-  const [movies, setMovies] = useState([])
+  const [movies, setMovies] = useState([]) 
 
   async function fetchMoviedHandler() {
     const response = await fetch('https://swapi.dev/api/films/')
