@@ -31,6 +31,7 @@ function App() {
       </section>
       <section>
         {!isloading && <MoviesList movies={movies} />}
+        {!isloading && movies.length === 0 && <p>Found no movies.</p>} 
         {isloading && <p>Loadning....</p>}
       </section>
     </React.Fragment>
